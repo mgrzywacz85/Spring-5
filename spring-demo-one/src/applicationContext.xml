@@ -14,8 +14,22 @@
     	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
     
+    <bean id="myFortune"
+    	class="com.marcin.springdemo.HappyFortuneService">     
+    </bean>
+    
     <bean id="myCoach"
-    	class="com.marcin.springdemo.SoccerCoach">    
+    	class="com.marcin.springdemo.TrackCoach">
+    	
+    	<!-- setting up constructor injection -->
+    	
+    	<constructor-arg ref="myFortune" />    
+    </bean>
+    
+    <bean id="myCricketCoach"
+    	class="com.marcin.springdemo.CricketCoach">
+    
+    	<property name="fortuneService" ref="myFortune" />
     </bean>
     
 </beans>

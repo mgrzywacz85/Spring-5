@@ -1,0 +1,16 @@
+package com.marcin.springdemo;
+
+public class SoccerCoach implements Coach {
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Run like Ronaldo!";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
