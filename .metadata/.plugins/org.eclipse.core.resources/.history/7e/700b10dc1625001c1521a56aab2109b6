@@ -1,0 +1,25 @@
+package com.marcin.springdemo;
+
+public class HelloSpringApp {
+
+	public static void main(String[] args) {
+
+		//load Spring configuration file
+		
+		
+		
+		
+		//retrieve bean from Spring container
+		
+		
+		
+		//call methods on bean
+		
+		
+		//close the application context
+		
+		
+
+	}
+
+}

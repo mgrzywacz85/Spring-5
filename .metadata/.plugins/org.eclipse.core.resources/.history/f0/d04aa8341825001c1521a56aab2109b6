@@ -1,0 +1,5 @@
+package com.marcin.springdemo;
+
+public class MyLoggerConfig {
+
+}
