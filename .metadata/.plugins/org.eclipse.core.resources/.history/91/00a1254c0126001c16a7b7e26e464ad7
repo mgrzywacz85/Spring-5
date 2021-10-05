@@ -34,8 +34,8 @@
     	class="com.marcin.springdemo.CricketCoach">
     
     	<property name="fortuneService" ref="myFortune" />    	
-    	<property name="emailAddress" value="${test.email}" />    	
-    	<property name="team" value="${test.team}" />
+    	<property name="emailAddress" value="test@marcin.com" />    	
+    	<property name="team" value="Anwil Cricketeers" />
     </bean>
     
 </beans>
