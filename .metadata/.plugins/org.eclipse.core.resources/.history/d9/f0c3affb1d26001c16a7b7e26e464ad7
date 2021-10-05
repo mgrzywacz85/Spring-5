@@ -32,7 +32,7 @@ public class RandomFortuneService implements FortuneService {
 		
 		Random rand = new Random();
 		
-		int randomFortune = rand.nextInt(fortunes.length);
+		int randomFortune = rand.nextInt(3);
 		
 		return fortunes[randomFortune].getFortune();
 	}
