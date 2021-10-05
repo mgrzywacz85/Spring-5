@@ -1,0 +1,39 @@
+package com.marcin.springdemo;
+
+public class RandomFortuneService implements FortuneService {
+	
+	private String happyFortune;
+	private String alrightFortune;
+	private String notBadFortune;
+
+	public String getHappyFortune() {
+		return happyFortune;
+	}
+
+	public void setHappyFortune(String happyFortune) {
+		this.happyFortune = happyFortune;
+	}
+
+	public String getAlrightFortune() {
+		return alrightFortune;
+	}
+
+	public void setAlrightFortune(String alrightFortune) {
+		this.alrightFortune = alrightFortune;
+	}
+
+	public String getNotBadFortune() {
+		return notBadFortune;
+	}
+
+	public void setNotBadFortune(String notBadFortune) {
+		this.notBadFortune = notBadFortune;
+	}
+
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
