@@ -20,6 +20,11 @@ public class SetterDemoClass {
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
 		
+		//calling value setter methods
+		
+		System.out.println(theCoach.getEmailAddress());
+		System.out.println(theCoach.getTeam());
+		
 		
 		//close context
 		context.close();

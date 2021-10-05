@@ -29,7 +29,9 @@
     <bean id="myCricketCoach"
     	class="com.marcin.springdemo.CricketCoach">
     
-    	<property name="fortuneService" ref="myFortune" />
+    	<property name="fortuneService" ref="myFortune" />    	
+    	<property name="emailAddress" value="test@marcin.com" />    	
+    	<property name="team" value="Anwil Cricketeers" />
     </bean>
     
 </beans>
