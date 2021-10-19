@@ -1,6 +1,7 @@
 package com.marcin.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,6 +10,7 @@ public class TennisCoach implements Coach {
 	//dependency injection directly on the field using @Autowired below - via Java Reflection
 	
 	@Autowired
+	@Qualifier("averageFortuneService")
 	private FortuneService fortuneService;
 	
 	//dependency injection via any method below as long as @Autowired tag is used
