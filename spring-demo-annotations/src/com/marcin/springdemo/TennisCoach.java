@@ -8,10 +8,10 @@ public class TennisCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
-	//dependency injection via setter method below
+	//dependency injection via any method below as long as @Autowired tag is used
 	
 	@Autowired
-	public void setFortuneService(FortuneService fortuneService) {
+	public void randomMethodName(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
 		
