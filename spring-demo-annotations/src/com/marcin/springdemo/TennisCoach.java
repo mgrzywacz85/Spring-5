@@ -7,13 +7,20 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 	
 	private FortuneService fortuneService;
+	
+	//dependency injection via setter method below
+	
+	@Autowired
+	public void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
 		
 	//dependency injection via constructor below
 
-	@Autowired
-	public TennisCoach(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-	}
+//	@Autowired
+//	public TennisCoach(FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
 	
 	@Override
 	public String getDailyWorkout() {
