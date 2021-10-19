@@ -7,6 +7,7 @@ public class AnnotationDemoApp {
 	public static void main(String[] args) {
 
 		//read spring config file
+		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 				
 		
@@ -14,15 +15,14 @@ public class AnnotationDemoApp {
 		
 		Coach theCoach = context.getBean("tennisCoach", Coach.class);
 		
-		Coach volleyCoach = context.getBean("volleyBallCoach", Coach.class);
-				
 		
-		//call methods on the bean
-		
+		//call methods on the bean		
 		
 		System.out.println(theCoach.getDailyWorkout());
 		
-		System.out.println(volleyCoach.getDailyWorkout());
+		//call method on the dependency - HappyFortuneService
+		
+		System.out.println(theCoach.getDailyFortune());
 		
 		//close the container
 		
