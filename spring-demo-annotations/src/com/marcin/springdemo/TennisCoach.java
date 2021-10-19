@@ -7,13 +7,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
-	//dependency injection directly on the field using @Autowired below - via Java Reflection
-	
-	@Autowired
-	@Qualifier("averageFortuneService")
+//	//dependency injection directly on the field using @Autowired below - via Java Reflection
+//	
+//	//@Qualifier defines which implementation of the interface to inject
+//	
+//	@Autowired
+//	@Qualifier("averageFortuneService")
 	private FortuneService fortuneService;
-	
-	//dependency injection via any method below as long as @Autowired tag is used
+//	
+//	//dependency injection via any method below as long as @Autowired tag is used
 	
 //	@Autowired
 //	public void randomMethodName(FortuneService fortuneService) {
@@ -22,10 +24,10 @@ public class TennisCoach implements Coach {
 		
 	//dependency injection via constructor below
 
-//	@Autowired
-//	public TennisCoach(FortuneService fortuneService) {
-//		this.fortuneService = fortuneService;
-//	}
+	@Autowired
+	public TennisCoach(@Qualifier("averageFortuneService") FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
 	
 	@Override
 	public String getDailyWorkout() {
