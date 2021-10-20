@@ -17,12 +17,14 @@ public class AnnotationBeanScopeDemoApp {
 		
 		boolean result = firstCoach == secondCoach;
 		
-		System.out.println(result);
+		System.out.println("Pointing to the same object: " + result);
 		
+		System.out.println("\nMemory location for firstCoach: " + firstCoach);
 		
+		System.out.println("\nMemory location for secondCoach: " + secondCoach);
 		
-		
-		
+		context.close();
+				
 	}
 
 }
