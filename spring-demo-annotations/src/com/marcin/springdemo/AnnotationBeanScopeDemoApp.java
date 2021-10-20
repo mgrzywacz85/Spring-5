@@ -5,6 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AnnotationBeanScopeDemoApp {
 
 	public static void main(String[] args) {
+		
+
 		//load spring config file
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -22,6 +24,7 @@ public class AnnotationBeanScopeDemoApp {
 		System.out.println("\nMemory location for firstCoach: " + firstCoach);
 		
 		System.out.println("\nMemory location for secondCoach: " + secondCoach);
+
 		
 		context.close();
 				
