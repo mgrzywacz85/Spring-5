@@ -1,9 +1,0 @@
-package com.marcin.springdemo;
-
-public class BaseballCoach {
-	
-	public String getDailyWorkout() {
-		return "Practice batting for 30 minutes";
-	}
-
-}
