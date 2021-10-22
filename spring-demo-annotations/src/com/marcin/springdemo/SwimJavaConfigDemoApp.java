@@ -13,7 +13,7 @@ public class SwimJavaConfigDemoApp {
 		
 		//get bean from spring container
 		
-		Coach theCoach = context.getBean("swimCoach", Coach.class);
+		SwimCoach theCoach = context.getBean("swimCoach", SwimCoach.class);
 		
 		
 		//call methods on the bean		
@@ -23,6 +23,13 @@ public class SwimJavaConfigDemoApp {
 		//call method on the dependency - HappyFortuneService
 		
 		System.out.println(theCoach.getDailyFortune());
+		
+		//call SwimCoach methods
+		
+		System.out.println("e-mail: " + theCoach.getEmail());		
+		
+		
+		System.out.println("team: " + theCoach.getTeam());	
 		
 		//close the container
 		
